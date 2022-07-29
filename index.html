@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./assets/main.css">
 </head>
 <body>
-  <header class="header hidden">
+  <header class="header">
     <div class="container">
       <nav class="nav">
         <div class="logo-holder">
@@ -32,7 +32,7 @@
     </div>
   </header>
   <main>
-    <section class="hero hidden">
+    <section class="hero">
       <div class="container container--hero">
         <div class="hero__content">
           <h1 class="main-title">Meet Remote Helpers!</h1>
@@ -43,7 +43,7 @@
         </div>
       </div>
     </section>
-    <div class="running-string">
+    <div class="running-string hidden">
       <ul class="running-string__list" id="webTicker">
         <li>Design</li>
         <li>Video Editing</li>
@@ -51,7 +51,7 @@
         <li>Developing</li>
       </ul>
     </div>
-    <section class="reasons hidden">
+    <section class="reasons">
         <div class="container">
             <div class="reasons__content">
                 <div class="line-wrapper line-wrapper--top">
@@ -84,6 +84,52 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section class="quiz">
+      <div class="container">
+        <h2 class="quiz__title" id="header">Have you already assembled your team?</h2>
+        <div class="quiz__content" id="desc">
+          <p class="quiz__text">You can choose qualified employees who are trained and practice with in the company</p>
+          <p class="quiz__text">Take the quick test and find out your perfect employee</p>
+        </div>
+      </div>
+      <button class="btn" id="btn">Take the test</button>
+      <img src="./assets/img/note.png" alt="" class="img-left">
+      <img src="./assets/img/guy.png" alt="" class="img-right">
+    </section>
+    <section class="checkbox">
+      <div class="container">
+        <div class="answers">
+          <div class="form-group">
+            <label>
+              <input type="checkbox" name="video-editor" class="real-checkbox">
+              <span class="custom-checkbox"></span>
+              <span>Video-editor</span>
+            </label>
+          </div>
+          <div class="form-group">
+            <label>
+              <input type="checkbox" name="sales-manager" class="real-checkbox">
+              <span class="custom-checkbox"></span>
+              <span>Sales-manager</span>
+            </label>
+          </div>
+          <div class="form-group">
+            <label>
+              <input type="checkbox" name="video-editor" class="real-checkbox">
+              <span class="custom-checkbox"></span>
+              <span>Video-editor</span>
+            </label>
+          </div>
+          <div class="form-group">
+            <label>
+              <input type="checkbox" name="sales-manager" class="real-checkbox">
+              <span class="custom-checkbox"></span>
+              <span>Sales-manager</span>
+            </label>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

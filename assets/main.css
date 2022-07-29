@@ -308,3 +308,106 @@ img {
   transform: translate(50%,30%);
   background-image: url(./img/icons/house.png);
 }
+
+.quiz {
+  position: relative;
+  height: calc(100vh - 100px);
+  padding-top: 104px;
+  /* padding-bottom: 214px; */
+  color: #FCF8F3;
+  letter-spacing: 0.02em;
+  background-color: #A760DE;
+}
+
+.quiz__title {
+  margin: 0;
+  margin-bottom: 64px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 1.7;
+  text-shadow: 5px -5px 0 #000;
+}
+
+.quiz__content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  text-align: center;
+}
+
+.quiz__text {
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 18px;
+  font-family: 'Sansation', sans-serif;
+}
+
+.quiz .btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 18px 0;
+  width: 352px;
+}
+
+.img-left {
+  position: absolute;
+  left: 50px;
+  bottom: 32%;
+  width: 15%;
+}
+
+.img-right {
+  position: absolute;
+  right: 50px;
+  bottom: 32%;
+  width: 15%;
+}
+
+.hidden {
+  display: none;
+}
+
+/* checkbox */
+
+.checkbox {
+  background-color: rgb(236, 62, 62);
+}
+
+.answers {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  padding-top: 50px;
+  padding-bottom: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+.answers label span {
+  font-family: 'Sansation', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: #FCF8F3;
+}
+
+.checkbox .form-group {
+  width: 50%;
+  display: block;
+}
+
+.real-checkbox {
+
+}
+
+.custom-checkbox {
+  margin-right: 5px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FCF8F3;
+  vertical-align: sub;
+}
