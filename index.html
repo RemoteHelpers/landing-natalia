@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./assets/main.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header hidden">
     <div class="container">
       <nav class="nav">
         <div class="logo-holder">
@@ -32,7 +32,7 @@
     </div>
   </header>
   <main>
-    <section class="hero">
+    <section class="hero hidden">
       <div class="container container--hero">
         <div class="hero__content">
           <h1 class="main-title">Meet Remote Helpers!</h1>
@@ -43,49 +43,51 @@
         </div>
       </div>
     </section>
-    <!-- <div class="running-string">
-      <ul class="running-string__list">
-        <li><div class="running-string__item">Design</div></li>
-        <li><div class="running-string__item">Video Editing</div></li>
-        <li><div class="running-string__item">Marketing</div></li>
-        <li><div class="running-string__item">Developing</div></li>
+    <div class="running-string">
+      <ul class="running-string__list" id="webTicker">
+        <li>Design</li>
+        <li>Video Editing</li>
+        <li>Marketing</li>
+        <li>Developing</li>
       </ul>
-    </div> -->
-    <section class="reasons">
+    </div>
+    <section class="reasons hidden">
         <div class="container">
             <div class="reasons__content">
                 <div class="line-wrapper line-wrapper--top">
                     <h2 class="reasons-title">Reasons of cooperation <span>with us</span></h2>
                     <div class="reasons__block reasons__block--small">
                         <h3 class="block__title">Flexible schedule</h3>
-                        <p class="block__text">our remote employees work according to the client's time zone, and it is possible to hire an employee for both an 8-hour, or a 4-hour working day
+                        <p class="block__text block__text--first">our remote employees work according to the client's time zone, and it is possible to hire an employee for both an 8-hour, or a 4-hour working day
                         </p>
                     </div>
                 </div>
                 <div class="line-wrapper line-wrapper--middle">
                     <div class="title-wrapper">
-                        <h3 class="block__title">Recruitment of suitable employee</h3>
+                        <h3 class="block__title block__title--second">Recruitment of suitable employee</h3>
                         <h3 class="block__title">Qualified employees</h3>
                     </div>
-                    <div class="text-wrapper">
-                        <p class="block__text">our managers will help you select workers by your requirements, which will allow you to save time and therefore money on staffing</p>
-                        <p class="block__text">starting cooperation with us, you choose qualified employees who are trained and practice within the company</p>
+                    <div class="text-wrapper text-wrapper--second">
+                        <p class="block__text block__text--big">our managers will help you select workers by your requirements, which will allow you to save time and therefore money on staffing</p>
+                        <p class="block__text block__text--big">starting cooperation with us, you choose qualified employees who are trained and practice within the company</p>
                     </div>
                 </div>
                 <div class="line-wrapper">
                     <div class="title-wrapper">
-                        <h3 class="block__title block__title--small">Remote work</h3>
-                        <h3 class="block__title block__title--big">Convenient interview format</h3>
+                        <h3 class="block__title block__title--small block__title--last">Remote work</h3>
+                        <h3 class="block__title block__title--big block__title--last">Convenient interview format</h3>
                     </div>
                     <div class="text-wrapper">
-                        <p class="block__text">you can get specialists, regardless of where they live. As a result, the quality of the work performed remains unchanged</p>
-                        <p class="block__text">you can schedule an interview at a suitable time. Just choose an employee and book a convenient time for you!</p>
+                        <p class="block__text block__text--small">you can get specialists, regardless of where they live. As a result, the quality of the work performed remains unchanged</p>
+                        <p class="block__text block__text--big">you can schedule an interview at a suitable time. Just choose an employee and book a convenient time for you!</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
   </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="./node_modules/webticker/jquery.webticker.min.js"></script>
   <script src="./assets/main.js"></script>
 </body>
 </html>
