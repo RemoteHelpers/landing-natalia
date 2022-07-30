@@ -36,15 +36,12 @@ const questions = [
 
 
 const headerContainer = document.querySelector('#header');
-// const textBlocks = document.querySelectorAll('.quiz__text')
 const description = document.querySelector('#desc');
 const submitButton = document.querySelector('#btn');
+const listContainer = document.querySelector('#answers')
 
 function clearPage() {
     headerContainer.innerHTML = '';
-    // for (let block of textBlocks) {
-    //     block.innerHTML = '';
-    // };
     submitButton.innerHTML = '';
     description.innerHTML = '';
 }
@@ -53,14 +50,25 @@ function clearPage() {
 
 function showQuestion() {
     // Question
-    const headerTemplate = `<h2 class="quiz__title" id="header">%title%</h2>`;
+    const headerTemplate = `<h2 class="quiz__title">%title%</h2>`;
     const title = headerTemplate.replace('%title%', questions[questionIndex]['question']);
-    console.log(title);
     headerContainer.innerHTML = title;
     // Answers
-    // for (let item of questions[questionIndex]['answers']) {
-    //     const questionTemplate = 
-    // }
+	let answerNumber = 1; // значение для value
+    for (answerText of questions[questionIndex]['answers']) {
+        const questionTemplate = `<li class="form-group">
+		<label>
+		  <input type="checkbox" name="video-editor" class="real-checkbox" value="%number%">
+		  <span class="custom-checkbox"></span>
+		  <span>%answer%</span>
+		</label>
+	  </li>`
+	  const answerHtml = questionTemplate.replace('%answer%', answerText).replace('%number%', answerNumber);
+	  console.log(answerHtml);
+	  listContainer.innerHTML += answerHtml;
+	  listContainer.classList.add('answers');
+	  answerNumber++; // увеличиваем значение для value
+    }
 }
-// clearPage()
-// showQuestion();
+clearPage()
+showQuestion();
