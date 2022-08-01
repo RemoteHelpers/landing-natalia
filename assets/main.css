@@ -311,7 +311,7 @@ img {
 
 .quiz {
   position: relative;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 70px);
   padding-top: 104px;
   /* padding-bottom: 214px; */
   color: #FCF8F3;
@@ -358,14 +358,14 @@ img {
 .img-left {
   position: absolute;
   left: 50px;
-  bottom: 32%;
+  bottom: 20%;
   width: 15%;
 }
 
 .img-right {
   position: absolute;
   right: 50px;
-  bottom: 32%;
+  bottom: 20%;
   width: 15%;
 }
 
@@ -515,3 +515,62 @@ img {
 .second-question .form-group {
   width: auto;
 }
+
+.alter-btn-wrapper {
+  padding-top: 96px;
+  display: flex;
+  width: 608px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn--yes {
+  padding-left: 75px;
+  padding-right: 75px;
+  background-color: transparent;
+  border: 2px solid #FCF8F3;
+  color: #FCF8F3;
+}
+
+.quiz__form {
+  margin-top: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  background-color: #4C40DB;
+}
+
+.quiz__form-title {
+  margin: 0;
+  margin-bottom: 40px;
+  width: 240px;
+  text-align: center;
+  font-family: 'Sansation', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: #000;
+}
+
+
+
+.quiz__form-holder input {
+  margin-right: 10px;
+  padding: 10px 23px;
+  background-color: #FEFEFE;
+  border: 2px solid #000;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #828282;
+}
+
+.quiz__form-holder .btn {
+  padding: 6px 30px;
+}
+

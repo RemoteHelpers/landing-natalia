@@ -47,7 +47,9 @@ const submitButton = document.querySelector('#btn');
 const listContainer = document.querySelector('#answers');
 const questionContainer = document.querySelector('.quiz__question-container');
 const instructionContainer = document.querySelector('.quiz__instruction-container');
-const buttonContainer = document.querySelector('.btn-wrapper')
+const buttonContainer = document.querySelector('.btn-wrapper');
+
+const quizContainer = document.querySelector('#quizContainer');
 
 function clearPage() {
     headerContainer.innerHTML = '';
@@ -82,7 +84,6 @@ function showQuestion() {
 	// Question Text
 	const questionTextTemplate = `<p class="quiz__question">%question%</p>`;
 	const question = questionTextTemplate.replace('%question%', questions[questionIndex]['questionText']);
-	console.log(question)
 	questionContainer.innerHTML = question;
 
     // Answers
@@ -92,18 +93,43 @@ function showQuestion() {
 			listContainer.classList.add('second-question');
 		} else {
 			listContainer.classList.remove('second-question');
+		};
+		if (questionIndex == questions.length - 1) {
+			const alterBtn = 
+			`<div class="alter-btn-wrapper">
+				<div class="yes-btn-wrapper"><button class="btn btn--yes" id="yes">Yes</button></div>
+				<div class="no-img-wrapper"><img src="./assets/img/no-btn.png" alt=""></div>
+			</div>`;
+			listContainer.innerHTML = alterBtn;
+			submitButton.style.display = 'none';
+			instructionContainer.innerHTML = "";
+			const getFormButton = document.querySelector('#yes');
+			console.log(getFormButton);
+			getFormButton.addEventListener('click', showForm);
+		} else {
+			const questionTemplate = `<li class="form-group">
+			<label>
+		  		<input type="checkbox" name="video-editor" class="real-checkbox" value="%number%">
+		  		<span class="custom-checkbox"></span>
+		  		<span>%answer%</span>
+			</label>
+	  		</li>`
+	  		const answerHtml = questionTemplate.replace('%answer%', answerText).replace('%number%', answerNumber);
+	  		listContainer.innerHTML += answerHtml;
+	  		listContainer.classList.add('answers');
+	  		answerNumber++; // увеличиваем значение для value
 		}
-        const questionTemplate = `<li class="form-group">
-		<label>
-		  <input type="checkbox" name="video-editor" class="real-checkbox" value="%number%">
-		  <span class="custom-checkbox"></span>
-		  <span>%answer%</span>
-		</label>
-	  </li>`
-	  const answerHtml = questionTemplate.replace('%answer%', answerText).replace('%number%', answerNumber);
-	  listContainer.innerHTML += answerHtml;
-	  listContainer.classList.add('answers');
-	  answerNumber++; // увеличиваем значение для value
+    //     const questionTemplate = `<li class="form-group">
+	// 	<label>
+	// 	  <input type="checkbox" name="video-editor" class="real-checkbox" value="%number%">
+	// 	  <span class="custom-checkbox"></span>
+	// 	  <span>%answer%</span>
+	// 	</label>
+	//   </li>`
+	//   const answerHtml = questionTemplate.replace('%answer%', answerText).replace('%number%', answerNumber);
+	//   listContainer.innerHTML += answerHtml;
+	//   listContainer.classList.add('answers');
+	//   answerNumber++; // увеличиваем значение для value
     }
 }
 
@@ -117,7 +143,27 @@ function checkAnswer() {
 		submitButton.blur();
 	}	
 }
+
+// function clearLastPage() {
+// 	quizContainer.innerHTML = "";
+// }
+
+
+function showForm() {
+	const form = `<form class="quiz__form">
+	<h3 class="quiz__form-title">Enter your email and get test results</h3>
+	<div class="quiz__form-holder">
+	  <input type="email" placeholder="Enter your e-mail">
+	  <button class="btn btn--form">Send</button>
+	</div>
+  </form>`;
+  quizContainer.innerHTML = form;
+}
+
+
 submitButton.addEventListener('click', clearPage);
 submitButton.addEventListener('click', addBtnText);
 submitButton.addEventListener('click', addInstructionText);
 submitButton.addEventListener('click', checkAnswer);
+// getFormButton.addEventListener('click', clearLastPage);
+// getFormButton.addEventListener('click', showForm);
