@@ -78,7 +78,7 @@ function clearAnswers() {
 
 function showQuestion() {
     // Question
-    const headerTemplate = `<h2 class="quiz__title quiz__title--blue">%title%</h2>`;
+    const headerTemplate = `<h2 class="quiz__title quiz__title--blue section-title">%title%</h2>`;
     const title = headerTemplate.replace('%title%', questions[questionIndex]['question']);
     headerContainer.innerHTML = title;
 	// Question Text
