@@ -37,6 +37,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Sansation', sans-serif;
+  letter-spacing: 0.02em;
   color: #000;
 }
 
@@ -984,7 +985,6 @@ img {
   padding: 30px 80px 30px 24px;
   font-size: 18px;
   line-height: 1.4;
-  letter-spacing: 0.02em;
   color: #222222;
   background-color: #fff;
   background-color: #FEFEFE;;
@@ -1051,4 +1051,43 @@ img {
 
 .ratio-content img {
   display: block;
+}
+
+.faq {
+  padding-top: 170px;
+  padding-bottom: 185px;
+  background-color: #FCF8F3;
+}
+
+.faq__title {
+  margin-bottom: 110px;
+  color: #4C40DB;
+  text-shadow: 0 -5px 0 #000;
+}
+
+.faq__block {
+  padding: 30px 0;
+  border-top: 2px solid #000000;
+}
+
+.faq__label {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 25px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.faq__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #222222;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.faq__text.active {
+  margin-top: 30px;
 }

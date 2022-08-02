@@ -177,3 +177,19 @@ for (let block of accordionBlocks) {
 		this.classList.toggle('active')
 	})
 }
+
+// FAQ
+
+let labels = document.querySelectorAll('.faq__label');
+for (let elem of labels) {
+	elem.addEventListener('click', function() {
+		this.classList.toggle('active');
+		let content = this.nextElementSibling;
+		content.classList.toggle('active');
+		if (content.style.maxHeight) {
+			content.style.maxHeight = null;
+		} else {
+			content.style.maxHeight = content.scrollHeight + 'px';
+		}
+	})
+}
