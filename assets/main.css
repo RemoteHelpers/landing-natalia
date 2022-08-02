@@ -19,6 +19,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('./fonts/NeueMachina-Bold.woff'),
+    url('./fonts/NeueMachina-Bold.woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -60,7 +69,7 @@ img {
   padding: 20px 110px;
   background-color: #B0F056;
   border: 2px solid #000000;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Neue Machina';
   font-size: 18px;
   line-height: 1.4;
   text-decoration: none;
@@ -549,15 +558,13 @@ img {
   margin-bottom: 40px;
   width: 240px;
   text-align: center;
-  font-family: 'Sansation', sans-serif;
+  font-family: 'Neue Machina';
   font-weight: 700;
   font-size: 21px;
   line-height: 1.4;
   letter-spacing: 0.02em;
   color: #000;
 }
-
-
 
 .quiz__form-holder input {
   margin-right: 10px;
@@ -574,3 +581,164 @@ img {
   padding: 6px 30px;
 }
 
+.department {
+  padding: 120px 0;
+  background-color: #E5E5E5;
+}
+
+.department__title {
+  margin: 0;
+  margin-bottom: 66px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 30px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: #F97700;
+  text-align: center;
+}
+
+.department__title span {
+  color: #A760DE;
+}
+
+.accord {
+  border-bottom: 2px solid #000000;
+}
+
+.accord__block {
+  position: relative;
+  padding-bottom: 24px;
+}
+
+.accord__label {
+  position: relative;
+  margin: 0;
+  padding-top: 16px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 33px;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  color: #E5E5E5;
+  text-shadow: #000 1px 0 0px, #000 0 1px 0px, #000 -1px 0 0px, #000 0 -1px 0px;
+  text-align: center;
+  border-top: 2px solid #000000;
+  cursor: pointer;
+}
+
+/* .accord__label:last-child {
+  border-bottom: 2px solid #000000;
+} */
+
+.accord__label::after {
+  background: none;
+}
+
+.accord__content {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.accord__subtitle {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  width: 350px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.accord__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accord__block-title {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.accord__block-title--schedule {
+  margin-bottom: 46px;
+}
+
+.accord__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accord__item {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 25px;
+}
+
+.accord__item::before {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 17px;
+  left: 0;
+  background-image: url(./img/icons/point.svg);
+}
+
+.accord__item:last-child {
+  margin-bottom: 0;
+}
+
+.accord__content-block--right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.accord__price {
+  position: relative;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: 'Neue Machina';
+}
+
+.accord__price::before {
+  position: absolute;
+  content: "";
+  width: 27px;
+  height: 27px;
+  left: -35px;
+  top: 50%;
+  transform: translateY(-40%);
+  background-image: url(./img/icons/e.svg);
+  background-repeat: no-repeat;
+}
+
+.btn--accord {
+  padding: 20px 44px;
+  font-size: 20px;
+  background-color:  #F97700;
+}
+
+.accord__block.active .accord__content {
+  margin-top: 50px;
+  height: 300px;
+}
+
+.accord__block.active .accord__label {
+  color: #000;
+  text-shadow: 3px -1px 0 #F97700;
+}
+
+.accord__block.active .accord__label::after {
+  position: absolute;
+  content: "";
+  width: 38px;
+  height: 44px;
+  right: 0;
+  background-image: url(./img/icons/close.svg);
+}

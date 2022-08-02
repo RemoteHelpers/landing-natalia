@@ -167,3 +167,13 @@ submitButton.addEventListener('click', addInstructionText);
 submitButton.addEventListener('click', checkAnswer);
 // getFormButton.addEventListener('click', clearLastPage);
 // getFormButton.addEventListener('click', showForm);
+
+
+//Accordion
+
+const accordionBlocks = document.querySelectorAll('.accord__block');
+for (let block of accordionBlocks) {
+	block.addEventListener('click', function() {
+		this.classList.toggle('active')
+	})
+}
