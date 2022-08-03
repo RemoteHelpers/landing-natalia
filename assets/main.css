@@ -209,6 +209,10 @@ img {
   background-color: #B0F056;
 }
 
+.reasons__content--mob {
+  display: none;
+}
+
 .line-wrapper--top {
   display: flex;
   justify-content: space-between;
@@ -258,6 +262,7 @@ img {
 }
 
 .block__text {
+  position: relative;
   padding: 38px 80px;
   background-color: #FEFEFE;
   border-right: 2px solid #000;
@@ -289,7 +294,6 @@ img {
 }
 
 .block__text--small {
-  position : relative;
   padding-right: 60px;
   width: 38%;
 }
@@ -300,7 +304,6 @@ img {
 }
 
 .text-wrapper--second p:first-child {
-  position: relative;
   border-right: none;
 }
 
@@ -324,20 +327,31 @@ img {
   right: 0;
   transform: translateX(50%);
   bottom: 0;
-  background-image: url(./img/icons/emp.png);
-  width: 186px;
-  height: 183px;
+  background-image: url(./img/icons/emp1.png);
+  width: 129px;
+  height: 93px;
 }
 
 .block__text--small::after {
   position: absolute;
   content: "";
-  width: 208px;
-  height: 180px;
+  width: 121px;
+  height: 121px;
   bottom: 0;
   right: 0;
   transform: translate(50%,30%);
-  background-image: url(./img/icons/house.png);
+  background-image: url(./img/icons/house1.png);
+}
+
+.block__text--last::after {
+  position: absolute;
+  content: "";
+  width: 121px;
+  height: 121px;
+  top: 50%;
+  right: 0;
+  transform: translate(50%,-50%);
+  background-image: url(./img/icons/speak1.png);
 }
 
 .quiz {
@@ -432,6 +446,7 @@ img {
 }
 
 .form-group {
+  padding-right: 7px;
   width: 50%;
   display: block;
 }
@@ -584,9 +599,14 @@ img {
   color: #000;
 }
 
+.quiz__form-holder {
+  display: flex;
+}
+
 .quiz__form-holder input {
   margin-right: 10px;
   padding: 10px 23px;
+  display: block;
   background-color: #FEFEFE;
   border: 2px solid #000;
   font-family: 'Press Start 2P', cursive;
@@ -924,7 +944,6 @@ img {
 }
 
 .btn--form {
-  margin-top: 48px;
   padding: 20px 92px;
 }
 
