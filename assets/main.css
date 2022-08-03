@@ -74,6 +74,13 @@ img {
   font-weight: 400;
 }
 
+.basic-text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #000;
+}
+
 .btn {
   display: block;
   padding: 20px 110px;
@@ -133,11 +140,17 @@ img {
 }
 
 .hero {
+  position: relative;
   height: calc(100vh - 194px);
   background-color: #4C40DB;
   background-image: url(./img/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.hero__img {
+  display: none;
+  position: absolute;
 }
 
 .container--hero {
@@ -168,13 +181,9 @@ img {
 }
 
 .hero__text {
-  margin: 0;
   margin-bottom: 64px;
   max-width: 688px;
-  font-size: 18px;
-  line-height: 140%;
   text-align: center;
-  color: #000000;
 }
 
 .running-string {
@@ -216,7 +225,7 @@ img {
   text-shadow: -3px -2px 0 #000;
 }
 
-.reasons-title span {
+.reasons__title span {
   color: #000;
   text-shadow: -3px -2px 0 #F97700;
 }
@@ -249,12 +258,8 @@ img {
 }
 
 .block__text {
-  margin: 0;
   padding: 38px 80px;
-  font-size: 18px;
-  line-height: 1.4;
-  letter-spacing: 0.02em;
-  background-color: #fff;
+  background-color: #FEFEFE;
   border-right: 2px solid #000;
   border-left: 2px solid #000;
   border-bottom: 2px solid #000;
@@ -655,13 +660,10 @@ img {
 }
 
 .accord__subtitle {
-  margin: 0;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 16px;
   width: 350px;
-  font-size: 18px;
-  font-weight: 400;
   text-align: center;
 }
 
@@ -867,12 +869,6 @@ img {
   margin-bottom: 32px;
 }
 
-.hire__text {
-  font-size: 18px;
-  line-height: 1.4;
-  color: #000000;
-}
-
 .response {
   padding-top: 82px;
   padding-bottom: 106px;
@@ -895,12 +891,8 @@ img {
 }
 
 .response__text {
-  margin: 0;
   margin-bottom: 133px;
   margin-right: 20px;
-  font-size: 18px;
-  line-height: 1.4;
-  letter-spacing: 0.02em;
 }
 
 .response__form {
@@ -996,12 +988,8 @@ img {
 }
 
 .feedback__text {
-  margin: 0;
   padding: 30px 80px 30px 24px;
-  font-size: 18px;
-  line-height: 1.4;
   color: #222222;
-  background-color: #fff;
   background-color: #FEFEFE;;
 }
 
@@ -1117,9 +1105,6 @@ img {
 }
 
 .faq__text {
-  margin: 0;
-  font-size: 18px;
-  line-height: 1.4;
   color: #222222;
   max-height: 0;
   overflow: hidden;
