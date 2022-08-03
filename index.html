@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./assets/main.css">
+  <link rel="stylesheet" href="./assets/media.css">
 </head>
 <body>
   <header class="header">
@@ -14,24 +15,29 @@
         <div class="logo-holder">
           <img src="./assets/img/logo.svg" alt="">
         </div>
-        <ul class="nav__socials">
-          <li>
-            <a href="#"><img src="./assets/img/icons/telegram.svg" alt=""></a>
-          </li>
-          <li>
-            <a href="#"><img src="./assets/img/icons/viber.svg" alt=""></a>
-          </li>
-          <li>
-            <a href="#"><img src="./assets/img/icons/whatsapp.svg" alt=""></a>
-          </li>
-          <li>
-            <a href="#"><img src="./assets/img/icons/skype.svg" alt=""></a>
-          </li>
-        </ul>
+        <div class="nav__list-holder">
+          <ul class="nav__list">
+            <li>
+              <a href="#"><img src="./assets/img/icons/telegram.svg" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/img/icons/viber.svg" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/img/icons/whatsapp.svg" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/img/icons/skype.svg" alt=""></a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-icon-wrapper">
+          <div class="menu-icon"></div>
+        </div>
       </nav>
     </div>
   </header>
-  <main>
+  <main class="">
     <section class="hero">
       <div class="container container--hero">
         <div class="hero__content">
@@ -51,7 +57,7 @@
         <li>Developing</li>
       </ul>
     </div>
-    <section class="reasons">
+    <section class="reasons hidden">
         <div class="container">
             <div class="reasons__content">
                 <div class="line-wrapper line-wrapper--top">
@@ -85,7 +91,7 @@
             </div>
         </div>
     </section>
-    <section class="quiz">
+    <section class="quiz hidden">
       <div class="container" id="quizContainer">
         <div id="header"><h2 class="quiz__title section-title" id="header">Have you already assembled your team?</h2></div>
         <div class="quiz__content" id="desc">
@@ -100,7 +106,7 @@
       <img src="./assets/img/note.png" alt="" class="img-left">
       <img src="./assets/img/guy.png" alt="" class="img-right">
     </section>
-    <section class="department">
+    <section class="department hidden">
       <div class="container">
         <h2 class="department__title">Check the departments and <span>get</span>a full-time or part-time <span>employee!</span></h2>
         <div class="accord">
@@ -268,7 +274,7 @@
         </div>
       </div>
     </section>
-    <section class="hire">
+    <section class="hire hidden">
       <div class="container">
         <h2 class="hire__title section-title">How to hire the worker?</h2>
         <div class="hire__grid">
@@ -291,7 +297,7 @@
         </div>
       </div>
     </section>
-    <section class="response">
+    <section class="response hidden">
       <div class="container">
         <h2 class="response__title section-title">Enhance your company productivity!</h2>
         <div class="response__wrapper">
@@ -313,7 +319,7 @@
         </div>
       </div>
     </section>
-    <section class="feedback">
+    <section class="feedback hidden">
       <div class="container">
         <h2 class="feedback__title section-title">Check what our clients say</h2>
         <div class="feedback__wrapper">
@@ -330,7 +336,7 @@
         <img src="./assets/img/feedback2.png" alt="" class="feedback__img feedback__img--right">
       </div>
     </section>
-    <section class="partners">
+    <section class="partners hidden">
       <div class="container">
         <h2 class="partners__title section-title">Our partners</h2>
         <div class="partners__wrapper">
@@ -382,7 +388,7 @@
         </div>
       </div>
     </section>
-    <section class="faq">
+    <section class="faq hidden">
       <div class="container">
         <h2 class="faq__title section-title">FAQ</h2>
         <div class="faq__wrapper">
@@ -420,7 +426,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer hidden">
     <div class="footer__wrapper">
       <div class="container">
         <div class="footer__line">

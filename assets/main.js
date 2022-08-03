@@ -193,3 +193,9 @@ for (let elem of labels) {
 		}
 	})
 }
+
+document.querySelector('.menu-icon-wrapper').onclick = function(){
+    document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
+    document.querySelector('.nav__list-holder').classList.toggle('nav__list-holder--visible');
+    document.querySelector('.header').classList.toggle('header--active');
+};
