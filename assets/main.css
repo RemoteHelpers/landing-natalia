@@ -399,7 +399,7 @@ img {
 .btn-inner {
   position: absolute;
   /* margin-right: 20px; */
-  /* display: none; */
+  display: none;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
@@ -407,6 +407,10 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.4;
+}
+
+.btn-inner.active {
+  display: block;
 }
 
 .btn-inner span {
@@ -678,20 +682,22 @@ img {
   background: none;
 }
 
-.accord__content {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  transition: 0.5s;
-  overflow-y: auto;
-}
-
 .accord__subtitle {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 16px;
   width: 350px;
   text-align: center;
+}
+
+.accord__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accord__content.active {
+  padding-bottom: 30px;
 }
 
 .accord__content-wrapper {
@@ -780,7 +786,11 @@ img {
   text-shadow: 3px -1px 0 #F97700;
 }
 
-.accord__block.active .accord__label::after {
+.accord__label.active {
+  margin-bottom: 30px;
+}
+
+.accord__label.active::after {
   position: absolute;
   content: "";
   width: 38px;

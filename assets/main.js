@@ -54,6 +54,8 @@ const quizContainer = document.querySelector('#quizContainer');
 const imgLeft = document.querySelector('#note');
 const imgRight = document.querySelector('#guy');
 
+const btnText = document.querySelector('.btn-inner')
+
 function clearPage() {
     headerContainer.innerHTML = '';
     submitButton.innerHTML = '';
@@ -173,16 +175,24 @@ submitButton.addEventListener('click', checkAnswer);
 submitButton.addEventListener('click', function func() {
 	imgLeft.classList.add('img-left--questions');
 	imgRight.classList.add('img-right--questions');
+	btnText.classList.add('active');
 	submitButton.removeEventListener('click', func);
 });
 
 
 //Accordion
 
-const accordionBlocks = document.querySelectorAll('.accord__block');
-for (let block of accordionBlocks) {
-	block.addEventListener('click', function() {
-		this.classList.toggle('active')
+let departLabels = document.querySelectorAll('.accord__label');
+for (let elem of departLabels) {
+	elem.addEventListener('click', function() {
+		this.classList.toggle('active');
+		let content = this.nextElementSibling;
+		content.classList.toggle('active');
+		if (content.style.maxHeight) {
+			content.style.maxHeight = null;
+		} else {
+			content.style.maxHeight = content.scrollHeight + 'px';
+		}
 	})
 }
 
