@@ -51,6 +51,9 @@ const buttonContainer = document.querySelector('.btn-wrapper');
 
 const quizContainer = document.querySelector('#quizContainer');
 
+const imgLeft = document.querySelector('#note');
+const imgRight = document.querySelector('#guy');
+
 function clearPage() {
     headerContainer.innerHTML = '';
     submitButton.innerHTML = '';
@@ -167,6 +170,11 @@ submitButton.addEventListener('click', addInstructionText);
 submitButton.addEventListener('click', checkAnswer);
 // getFormButton.addEventListener('click', clearLastPage);
 // getFormButton.addEventListener('click', showForm);
+submitButton.addEventListener('click', function func() {
+	imgLeft.classList.add('img-left--questions');
+	imgRight.classList.add('img-right--questions');
+	submitButton.removeEventListener('click', func);
+});
 
 
 //Accordion
