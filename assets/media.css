@@ -79,10 +79,71 @@
         height: 35px;
         background-size: contain;
     }
+
+    .hire__title {
+        /* margin-bottom: 20px; */
+        text-shadow: 5px -3px 0 #000;
+    }
 }
 @media (max-width: 1320px) {
     .hero {
         background-size: contain;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hire {
+        padding: 40px 0;
+    }
+
+    .hire__grid {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-gap: 40px;
+    }
+
+    .hire__grid-box {
+        padding: 30px;
+    }
+
+    .hire__box-title {
+        font-size: 20px;
+    }
+
+    .hire__content .hire__box-title {
+        margin-bottom: 15px;
+    }
+
+    .box1 {
+        grid-column: 1 / 1;
+        grid-row: 1 / 2;
+    }
+
+    .box2 {
+        grid-column: 1 / 1;
+        grid-row: 2 / 3;
+    }
+
+    .box3 {
+        grid-column: 1 / 1;
+        grid-row: 4 / 4;
+    }
+
+    .box4 {
+        grid-column: 1 / 1;
+        grid-row: 3 / 4;
+    }
+
+    .hire__grid-box::after {
+        display: none;
+    }
+
+    .hire__grid-box::before {
+        right: 0;
+        left: auto;
+        top: 0;
+        transform: translate(-27%, -50%);
+        font-size: 40px;
     }
 }
 
@@ -214,6 +275,10 @@
     .department {
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+
+    .hire__title {
+        text-shadow: 2px -2px 0 #000;
     }
 }
 
@@ -483,12 +548,7 @@
     }
 
     .section-title {
-        font-size: 30px;
-    }
-
-    .quiz__title {
-        margin-bottom: 30px;
-        text-shadow: 3px -3px 0 #000;
+        font-size: 28px;
     }
 
     .quiz__title--blue {
@@ -530,6 +590,19 @@
         margin-bottom: 30px;
         padding: 20px 0;
         width: 225px;
+    }
+
+    .hire__title {
+        margin-bottom: 30px;
+    }
+
+    .hire__grid-box::before {
+        font-size: 25px;
+        text-shadow: 2px -2px 0 #000;
+    }
+
+    .hire__box-title {
+        font-size: 16px;
     }
 }
 
