@@ -54,8 +54,6 @@ const quizContainer = document.querySelector('#quizContainer');
 const imgLeft = document.querySelector('#note');
 const imgRight = document.querySelector('#guy');
 
-const btnText = document.querySelector('.btn-inner')
-
 function clearPage() {
     headerContainer.innerHTML = '';
     submitButton.innerHTML = '';
@@ -64,7 +62,7 @@ function clearPage() {
 }
 
 function addBtnText() {
-	submitButton.innerHTML = '';
+	submitButton.innerHTML = 'Next';
 	submitButton.classList.add('btn--questions');
 	buttonContainer.classList.add('btn-wrapper--quiz')
 	submitButton.removeEventListener('click', addBtnText);
@@ -175,7 +173,6 @@ submitButton.addEventListener('click', checkAnswer);
 submitButton.addEventListener('click', function func() {
 	imgLeft.classList.add('img-left--questions');
 	imgRight.classList.add('img-right--questions');
-	btnText.classList.add('active');
 	submitButton.removeEventListener('click', func);
 });
 
