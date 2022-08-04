@@ -280,6 +280,43 @@
     .hire__title {
         text-shadow: 2px -2px 0 #000;
     }
+
+    .response {
+        padding: 40px 0;
+    }
+
+    .response__title {
+        margin-bottom: 30px;
+        text-shadow: -2px -2px 0 #000;
+    }
+
+    .response__wrapper {
+        flex-direction: column;
+    }
+
+    .response__wrapper .img-holder {
+        display: none;
+    }
+
+    .response__content {
+        width: 100%;
+    }
+
+    .response__text {
+        margin-bottom: 30px;
+    }
+
+    .response__form {
+        width: 100%;
+    }
+
+    .response__form label {
+        font-size: 18px;
+    }
+
+    .response__form input {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 870px) {
@@ -519,6 +556,10 @@
     .pointer {
         bottom: 15%;
     }
+
+    .response__form input {
+        padding: 15px 0;
+    }
 }
 
 @media (max-width: 570px) {
@@ -634,6 +675,10 @@
         font-size: 25px;
     }
 
+    .section-title {
+        font-size: 24px;
+    }
+
     .hero__title {
         font-size: 16px;
     }
@@ -679,6 +724,14 @@
 
     .accord__info {
         width: 60%;
+    }
+
+    .response__form label {
+        font-size: 14px;
+    }
+
+    .response__form input {
+        font-size: 14px;
     }
 }
 

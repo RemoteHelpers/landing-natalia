@@ -913,6 +913,7 @@ img {
 }
 
 .response__content {
+  margin-right: 30px;
   width: 390px;
 }
 
@@ -947,6 +948,11 @@ img {
   color: #828282;
   text-transform: uppercase;
   border-bottom: 2px solid #000000;
+}
+
+.response__form input:focus,
+.response__form input:active {
+  outline: none;
 }
 
 .btn--form {
