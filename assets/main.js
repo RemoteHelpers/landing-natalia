@@ -62,7 +62,7 @@ function clearPage() {
 }
 
 function addBtnText() {
-	submitButton.innerHTML = 'Next ';
+	submitButton.innerHTML = '';
 	submitButton.classList.add('btn--questions');
 	buttonContainer.classList.add('btn-wrapper--quiz')
 	submitButton.removeEventListener('click', addBtnText);

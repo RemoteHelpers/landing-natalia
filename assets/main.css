@@ -396,6 +396,27 @@ img {
   width: 352px;
 }
 
+.btn-inner {
+  position: absolute;
+  /* margin-right: 20px; */
+  /* display: none; */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-family: 'Neue Machina', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.btn-inner span {
+  margin-right: 7px;
+}
+
+.btn-inner img {
+  width: 17px;
+}
+
 .img-left {
   position: absolute;
   left: 50px;
@@ -520,24 +541,10 @@ img {
 }
 
 .btn--questions {
-  padding-right: 24px;
-  position: relative;
+  height: 65px;
   background-color: transparent;
   border: 2px solid #FCF8F3;
   color: #FCF8F3;
-}
-
-.btn--questions::after {
-  position: absolute;
-  content: "";
-  top: 50%;
-  right: 110px;
-  transform: translateY(-35%);
-  width: 16px;
-  height: 23px;
-  background-image: url(./img/icons/arrow.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .btn-wrapper--quiz {
@@ -591,7 +598,7 @@ img {
   margin-bottom: 40px;
   width: 240px;
   text-align: center;
-  font-family: 'Neue Machina';
+  font-family: 'Neue Machina', sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 1.4;

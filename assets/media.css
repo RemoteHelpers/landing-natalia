@@ -64,16 +64,6 @@
     .btn-wrapper--quiz {
         bottom: 50px;
     }
-
-    .btn--questions {
-        padding: 10px 0;
-        padding-right: 24px;
-    }
-
-    .btn--questions::after {
-        right: 130px;
-        transform: translateY(-25%); 
-    }
 }
 @media (max-width: 1320px) {
     .hero {
@@ -391,6 +381,10 @@
         width: 90%;
     }
 
+    .btn--questions {
+        height: 50px;
+    }
+
     .section-title {
         font-size: 30px;
     }
@@ -491,15 +485,15 @@
     }
 }
 
-@media (min-height: 800px) {
+@media (min-height: 800px) and (max-width: 1000px) {
     .btn-wrapper--quiz {
-        bottom: 250px;
+        bottom: 200px;
     }
 
-    .img-right {
+    /* .img-right {
         width: 70%;
         bottom: 20px;
-    }
+    } */
 
     .answers {
         padding-top: 50px;
