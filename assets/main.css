@@ -378,11 +378,11 @@ img {
   text-align: center;
 }
 
-.quiz p {
+/* .quiz p {
   margin-top: 0;
   font-size: 18px;
   font-family: 'Sansation', sans-serif;
-}
+} */
 
 .quiz__text {
   margin-bottom: 60px;

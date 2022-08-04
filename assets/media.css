@@ -5,6 +5,24 @@
         font-size: 40px;
     }
 
+    .main-title {
+        margin-bottom: 35px;
+        font-size: 48px;
+    }
+
+    .hero__title {
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+
+    .hero__text {
+        margin-bottom: 40px;
+    }
+
+    .basic-text {
+        font-size: 16px;
+    }
+
     .line-wrapper--middle .title-wrapper .block__title:last-child::after {
         right: 5px;
         transform: none;
@@ -61,24 +79,6 @@
     .hero {
         background-size: contain;
     }
-
-    .main-title {
-        margin-bottom: 35px;
-        font-size: 48px;
-    }
-
-    .hero__title {
-        margin-bottom: 25px;
-        font-size: 20px;
-    }
-
-    .hero__text {
-        margin-bottom: 40px;
-    }
-
-    .basic-text {
-        font-size: 16px;
-    }
 }
 
 @media (max-width: 1000px) {
@@ -87,8 +87,14 @@
         background-image: none;
     }
 
+    .main-title {
+        font-size: 35px;
+        text-shadow: 5px -2px 0 #000;
+    }
+
     .hero__img {
         display: block;
+        max-width: 120px;
     }
 
     .speak {
@@ -97,8 +103,9 @@
     }
 
     .sound {
-        top: 100px;
-        left: 60px;
+        top: 80px;
+        left: 40px;
+        max-width: 90px;
     }
 
     .screen {
@@ -119,6 +126,7 @@
     .pointer {
         right: 33%;
         bottom: 20%;
+        max-width: 50px;
     }
 
     .reasons {
@@ -315,11 +323,25 @@
 
 }
 
+@media (max-width: 650px) {
+    .speak {
+        top: 0;
+    }
+
+    .sound {
+        left: 10px;
+    }
+
+    .pointer {
+        bottom: 15%;
+    }
+}
+
 @media (max-width: 570px) {
     .main-title {
         margin-bottom: 20px;
-        font-size: 38px;
-        text-shadow: 5px -2px 0 #000;
+        font-size: 30px;
+        text-shadow: 1px -1px 0 #000;
     }
 
     .hero__title {
@@ -358,6 +380,7 @@
     }
 
     .sound {
+        top: 10px;
         width: 100px;
         height: 100px;
     }
@@ -366,12 +389,13 @@
         width: 57px;
         height: 74px;
     }
-}
 
-@media (max-width: 480px) {
     .screen {
         display: none;
     }
+}
+
+@media (max-width: 480px) {
 
     .sheet {
         display: none;
@@ -379,11 +403,6 @@
 
     .pointer {
         bottom: 15%;
-    }
-
-    .sound {
-        top: 80px;
-        left: 30px;
     }
 
     .block__title {
@@ -400,6 +419,42 @@
 
     .img-right {
         display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-title {
+        font-size: 25px;
+    }
+
+    .hero__title {
+        font-size: 16px;
+    }
+
+    .basic-text {
+        font-size: 12px;
+    }
+    
+    .speak {
+        top: 0;
+        width: 50px;
+        height: auto;
+    }
+
+    .sound {
+        width: 50px;
+        height: auto;
+    }
+
+    .pointer {
+        width: 30px;
+        height: auto;
+        bottom: 15%;
+    }
+
+    .ps {
+        width: 70px;
+        height: auto;
     }
 }
 
