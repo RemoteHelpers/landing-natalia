@@ -1033,6 +1033,10 @@ img {
   bottom: 0;
 }
 
+.feedback__img--mob {
+  display: none;
+}
+
 .feedback__img--left {
   left: 0;
   transform: translateX(-30%);
