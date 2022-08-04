@@ -1115,6 +1115,7 @@ img {
 .faq__label {
   position: relative;
   margin: 0;
+  padding-right: 25px;
   font-family: 'Press Start 2P', cursive;
   font-size: 25px;
   line-height: 1.5;

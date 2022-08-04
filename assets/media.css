@@ -96,6 +96,15 @@
     .feedback__img--left {
         left: 15px;
     }
+
+    .faq {
+        padding: 70px 0;
+    }
+
+    .faq__title {
+        margin-bottom: 40px;
+        text-shadow: 0 -3px 0 #000;
+    }
 }
 @media (max-width: 1320px) {
     .hero {
@@ -375,6 +384,24 @@
     .feedback__text {
         padding-right: 90px;
     }
+
+    .partners {
+        padding: 40px 0;
+    }
+
+    .partners__title {
+        margin-bottom: 30px;
+    }
+
+    .faq__label {
+        font-size: 18px;
+    }
+
+    .faq__label::after {
+        width: 25px;
+        height: 32px;
+        background-size: contain;
+    }
 }
 
 @media (max-width: 870px) {
@@ -630,6 +657,15 @@
     .feedback__block {
         width: 100%;
     }
+
+    .partners__wrapper {
+        row-gap: 16px;
+        column-gap: 16px;
+    }
+
+    .ratio {
+        width: calc(50% - 8px);
+    }
 }
 
 @media (max-width: 570px) {
@@ -714,6 +750,24 @@
 
     .hire__box-title {
         font-size: 16px;
+    }
+
+    .faq__title {
+        margin-bottom: 25px;
+        text-shadow: 0 -1px 0 #000;
+    }
+
+    .faq__block {
+        padding: 20px 0;
+    }
+
+    .faq__label {
+        font-size: 14px;
+    }
+
+    .faq__label::after {
+        width: 20px;
+        height: 25px;
     }
 }
 
