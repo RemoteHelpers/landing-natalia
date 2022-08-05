@@ -2,6 +2,7 @@ const splide = new Splide( '.splide', {
 	type   : 'loop',
 	drag   : 'free',
 	focus  : 'center',
+	autoWidth: true,
 	perPage: 3,
 	autoScroll: {
 	  speed: 2,

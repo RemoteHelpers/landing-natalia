@@ -159,10 +159,10 @@ img {
   position: absolute;
 }
 
-.container--hero {
+/* .container--hero {
   position: relative;
   height: calc(100vh - 210px)
-}
+} */
 
 .hero__content {
   width: 95%;
@@ -200,13 +200,7 @@ img {
 .running-string li {
   font-family: 'Press Start 2P', cursive;
   font-size: 34px;
-  padding: 0 70px !important;
   letter-spacing: 0.02em;
-}
-
-.ticker-spacer {
-  width: 0 !important;
-  display: none;
 }
 
 .reasons {
@@ -1233,4 +1227,31 @@ img {
 
 .footer__adress p {
   margin: 0;
+}
+
+/* Ticker style */
+
+.splide__arrows {
+  display: none;
+}
+
+.splide__pagination {
+  display: none;
+}
+
+.splide {
+  height: 130px;
+}
+
+.splide__track {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.running-string li {
+  text-align: center;
+}
+
+.splide__slide {
+  padding: 0 70px;
 }
