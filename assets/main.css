@@ -30,6 +30,7 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -39,7 +40,6 @@ body {
   font-family: 'Sansation', sans-serif;
   letter-spacing: 0.02em;
   color: #000;
-  scroll-behavior: smooth;
 }
 
 .stop-scrolling {
