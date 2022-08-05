@@ -1216,6 +1216,10 @@ img {
   justify-content: flex-end;
 }
 
+.logo--mob {
+  display: none;
+}
+
 .footer__adress a {
   margin-bottom: 8px;
   display: block;
