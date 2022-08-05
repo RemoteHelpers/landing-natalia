@@ -579,9 +579,9 @@
     width: 100%;
     z-index: 2;
   }
-  
+
   .nav__list-holder--visible {
-    display: block;
+    height: 100vh;
   }
   
   .nav__list {

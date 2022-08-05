@@ -39,6 +39,12 @@ body {
   font-family: 'Sansation', sans-serif;
   letter-spacing: 0.02em;
   color: #000;
+  scroll-behavior: smooth;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
 
 img {

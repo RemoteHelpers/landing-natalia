@@ -211,7 +211,7 @@ for (let elem of labels) {
 
 document.querySelector('.menu-icon-wrapper').onclick = function(){
     document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
-    // document.querySelector('.nav__list-holder').classList.toggle('nav__list-holder--visible');
+    document.querySelector('.nav__list-holder').classList.toggle('nav__list-holder--visible');
     document.querySelector('.header').classList.toggle('header--active');
 	let menu = document.querySelector('.nav__list');
 	menu.classList.toggle('active');
@@ -220,4 +220,5 @@ document.querySelector('.menu-icon-wrapper').onclick = function(){
 		} else {
 			menu.style.maxHeight = menu.scrollHeight + 'px';
 		}
+	document.querySelector('body').classList.toggle('stop-scrolling')
 };
