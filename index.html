@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide-core.min.css">
   <link rel="stylesheet" href="./assets/main.css">
   <link rel="stylesheet" href="./assets/media.css">
 </head>
@@ -57,13 +58,22 @@
       <img src="./assets/img/hero-img/sound.svg" alt="" class="hero__img sound">
       <img src="./assets/img/hero-img/speak.svg" alt="" class="hero__img speak">
     </section>
-    <div class="running-string hidden">
-      <ul class="running-string__list" id="webTicker">
+    <div class="running-string">
+      <!-- <ul class="running-string__list" id="webTicker">
         <li>Design</li>
         <li>Video Editing</li>
         <li>Marketing</li>
         <li>Developing</li>
-      </ul>
+      </ul> -->
+      <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">Slide 01</li>
+            <li class="splide__slide">Slide 02</li>
+            <li class="splide__slide">Slide 03</li>
+          </ul>
+        </div>
+      </section>
     </div>
     <section class="reasons">
       <div class="container">
@@ -569,8 +579,10 @@
       </div>
     </div>
   </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="./node_modules/webticker/jquery.webticker.min.js"></script>
+  <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+  <script src="./node_modules/@splidejs/splide-extension-auto-scroll/dist/js/splide-extension-auto-scroll.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="./node_modules/webticker/jquery.webticker.min.js"></script> -->
   <script src="./assets/main.js"></script>
 </body>
 </html>

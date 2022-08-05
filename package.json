@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "@splidejs/splide": "^4.0.7",
+    "@splidejs/splide-extension-auto-scroll": "^0.4.2",
     "webticker": "^3.0.0"
   }
 }

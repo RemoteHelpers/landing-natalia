@@ -1,7 +1,15 @@
-$('#webTicker').webTicker({
-    height:'130px',
-    speed: 150
-});
+const splide = new Splide( '.splide', {
+	type   : 'loop',
+	drag   : 'free',
+	focus  : 'center',
+	perPage: 3,
+	autoScroll: {
+	  speed: 2,
+	},
+  } );
+  
+  splide.mount( window.splide.Extensions );
+
 
 // Quiz
 let questionIndex = 0;
